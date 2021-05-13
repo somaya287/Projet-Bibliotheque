@@ -1,0 +1,52 @@
+#header,#leftPane{
+    -fx-background-color: #000;
+}
+#rightPane{
+    -fx-background-image: url("./bg.jpg");
+    -fx-background-size: cover;
+}
+.rightpanebutton{
+    -fx-background-color: #FFF;
+    -fx-font-family: "Kristen ITC";
+    -fx-border-style: solid;
+}
+.headerButton{
+    -fx-background-color: #dd4b39;
+    -fx-opacity: 0.85;
+}
+.headerButton:hover{
+    -fx-opacity: 1;
+}
+
+
+.options{
+    -fx-background-color: #FFF;
+    -fx-outline: none;
+    -fx-border-radius: 0px;
+}
+.options:hover , .rightpanebutton:hover{
+    -fx-background-color: #C8B615;
+}
+.options:pressed, .rightpanebutton:selected {
+    -fx-background-color: #FFD232;
+}
+.option1section{
+    -fx-height: 0%;
+}
+.categorie2{
+    -fx-background-image: url("./bg2.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.loginButton{
+    -fx-background-color: #4CAF50;
+    -fx-opacity: 0.85;
+}
+.loginButton:hover , .signUPButton:hover{
+    -fx-opacity: 1;
+}
+.signUPButton{
+    -fx-background-color: #3B5998;
+    -fx-opacity: 0.85;
+}
+

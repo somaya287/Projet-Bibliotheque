@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="rightPane" minHeight="-Infinity" prefHeight="561.0" prefWidth="907.0" stylesheets="@../../Stylesheets/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.sampleIG.LOGINandSIGNUPController">
+   <children>
+      <Line endX="-15.999969482421875" endY="485.4000244140625" layoutX="472.0" layoutY="49.0" startX="-24.800018310546875" startY="-29.0" />
+      <Label layoutX="131.0" layoutY="33.0" text="Inscrivez vous !">
+         <font>
+            <Font name="Script MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="33.0" text="Connectez vous !">
+         <font>
+            <Font name="Script MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="119.0" prefHeight="44.0" prefWidth="244.0" text="Nom de la bibliothèque: ">
+         <font>
+            <Font name="Segoe Print Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomConn" layoutX="604.0" layoutY="184.0" prefHeight="32.0" prefWidth="190.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" />
+      <Label layoutX="510.0" layoutY="237.0" prefHeight="44.0" prefWidth="244.0" text="Mot de Passe:">
+         <font>
+            <Font name="Segoe Print Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="558.0" layoutY="373.0" mnemonicParsing="false" onAction="#Connecter" prefHeight="62.0" prefWidth="254.0" styleClass="loginButton" stylesheets="@../../Stylesheets/style.css" text="Se Connecter" textFill="WHITE" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="558.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="373.0">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="92.0" layoutY="127.0" prefHeight="44.0" prefWidth="244.0" text="Nom de la bibliothèque: ">
+         <font>
+            <Font name="Segoe Print Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomIns" layoutX="221.0" layoutY="168.0" prefHeight="32.0" prefWidth="190.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" />
+      <Label layoutX="99.0" layoutY="226.0" prefHeight="44.0" prefWidth="244.0" text="Mot de Passe:">
+         <font>
+            <Font name="Segoe Print Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="328.0" prefHeight="44.0" prefWidth="276.0" text="Confirmer le Mot de Passe:">
+         <font>
+            <Font name="Segoe Print Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="118.0" layoutY="436.0" mnemonicParsing="false" onAction="#inscrire" prefHeight="62.0" prefWidth="232.0" styleClass="signUPButton" stylesheets="@../../Stylesheets/style.css" text="S'inscrire" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="mdpconfirmIns" layoutX="221.0" layoutY="373.0" prefHeight="32.0" prefWidth="190.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" />
+      <PasswordField fx:id="mdpIns" layoutX="221.0" layoutY="277.0" prefHeight="32.0" prefWidth="190.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" />
+      <PasswordField fx:id="mdpConn" layoutX="604.0" layoutY="281.0" prefHeight="32.0" prefWidth="190.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" />
+   </children>
+</AnchorPane>

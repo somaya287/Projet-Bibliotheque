@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="488.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.sampleIG.AjouterMangaController">
+    <children>
+        <AnchorPane prefHeight="488.0" prefWidth="620.0" styleClass="categorie2" stylesheets="@../../Stylesheets/style.css">
+            <Label layoutX="25.0" layoutY="46.0" text="Son ISBN:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="ISBNfield" layoutX="175.0" layoutY="42.0" promptText="...Type here" />
+            <TextField fx:id="titrefield" layoutX="175.0" layoutY="90.0" promptText="...Type here" />
+            <TextField fx:id="auteur1field" layoutX="175.0" layoutY="140.0" promptText="...Type here" />
+            <TextField fx:id="genrefield" layoutX="439.0" layoutY="64.0" promptText="...Type here" />
+            <TextField fx:id="formatfield" layoutX="440.0" layoutY="127.0" promptText="...Type here" />
+            <TextField fx:id="chaptersnbfield" layoutX="534.0" layoutY="179.0" prefHeight="26.0" prefWidth="53.0" />
+            <TextField fx:id="edityearfield" layoutX="175.0" layoutY="290.0" prefHeight="26.0" prefWidth="56.0" />
+            <TextField fx:id="editeurfield" layoutX="175.0" layoutY="239.0" promptText="...Type here" />
+            <TextField fx:id="auteur2field" layoutX="175.0" layoutY="192.0" promptText="...Type here" />
+            <Label layoutX="25.0" layoutY="94.0" text="Son titre:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="139.0" prefHeight="26.0" prefWidth="150.0" text="Nom de l'auteur1:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="195.0" text="Nom de l'auteur2:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="242.0" text="Nom de l'éditeur:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="293.0" text="Année d'édition:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Line endX="-100.0" endY="339.60003662109375" layoutX="433.0" layoutY="14.0" startX="-100.0" />
+            <Label layoutX="346.0" layoutY="14.0" prefHeight="18.0" prefWidth="256.0" text="Informations supplémentaires">
+                <font>
+                    <Font name="Tw Cen MT Condensed" size="27.0" />
+                </font>
+            </Label>
+            <Label layoutX="339.0" layoutY="68.0" text="Genre:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="339.0" layoutY="130.0" text="Format:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="339.0" layoutY="186.0" text="Nombre de chapitres:">
+                <font>
+                    <Font name="Consolas" size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="363.0" prefHeight="31.0" prefWidth="303.0" text="Les informations avec (*) sont obligatoires!! ">
+                <font>
+                    <Font name="Arial" size="15.0" />
+                </font>
+            </Label>
+            <Button layoutX="439.0" layoutY="394.0" mnemonicParsing="false" onAction="#AjouterManga" prefHeight="53.0" prefWidth="122.0" styleClass="rightpanebutton" stylesheets="@../../Stylesheets/style.css" text="Ajouter">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Label layoutX="6.0" layoutY="32.0" prefHeight="31.0" prefWidth="14.0" text="*">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="80.0" prefHeight="31.0" prefWidth="14.0" text="*">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" rotate="20.8">
+                <image>
+                    <Image url="@../../Stylesheets/manga.png" />
+                </image>
+            </ImageView>
+        </AnchorPane>
+    </children>
+</AnchorPane>
