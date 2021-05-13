@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="561.0" prefWidth="907.0" stylesheets="@../../Stylesheets/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.sampleIG.WelcomeController">
+    <children>
+        <ButtonBar id="header" prefHeight="49.0" prefWidth="907.0" stylesheets="@../../Stylesheets/style.css">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#Deconnecter" prefHeight="33.0" prefWidth="126.0" styleClass="headerButton" stylesheets="@../../Stylesheets/style.css" text="Se Déconnecter" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </buttons>
+        </ButtonBar>
+        <SplitPane dividerPositions="0.27272727272727265" layoutX="1.0" layoutY="50.0" pickOnBounds="false" prefHeight="510.0" prefWidth="907.0">
+            <items>
+                <AnchorPane id="leftPane" minHeight="0.0" minWidth="0.0" prefHeight="466.0" prefWidth="262.0" stylesheets="@../../Stylesheets/style.css">
+                    <children>
+                        <Button layoutY="6.0" mnemonicParsing="false" onAction="#switchToChercherAdherent" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Chercher un adhérent ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutY="49.0" mnemonicParsing="false" onAction="#switchToChercherDocument" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Chercher un document ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Label layoutX="80.0" layoutY="485.0" prefHeight="18.0" prefWidth="126.0" text="Fait par Somaya " textFill="WHITE" />
+                        <Button layoutY="92.0" mnemonicParsing="false" onAction="#switchToPreterDocument" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Preter un document ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutY="135.0" mnemonicParsing="false" onAction="#switchToSupprimerDocument" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Supprimer un document ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutY="224.0" mnemonicParsing="false" onAction="#switchToAjouterDocument" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Ajouter un document ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutY="180.0" mnemonicParsing="false" onAction="#switchToAjouterAdherent" prefHeight="34.0" prefWidth="244.0" styleClass="options" stylesheets="@../../Stylesheets/style.css" text="Ajouter un adhérent ">
+                            <font>
+                                <Font name="Comic Sans MS" size="12.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <ImageView fitHeight="26.0" fitWidth="44.0" layoutX="23.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/trash.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="23.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/search.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="22.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/search2.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="25.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/add1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="25.0" layoutX="22.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/add.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="22.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Stylesheets/preter.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="331.0" styleClass="option1section" stylesheets="@../../Stylesheets/style.css">
+               <children>
+                  <Label layoutX="116.0" layoutY="119.0" lineSpacing="4.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="236.0" prefWidth="315.0" text="Soyez la bienvenue! Amusez vous à gérer votre bibliotheque facilement par cette application." wrapText="true">
+                     <font>
+                        <Font name="Freestyle Script" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="234.0" layoutY="281.0" prefHeight="34.0" prefWidth="154.0" text="Welcome!!">
+                     <font>
+                        <Font name="Freestyle Script" size="43.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="450.0" prefHeight="42.0" prefWidth="438.0" text="&quot; Reading is dreaming with eyes wide open &quot;">
+                     <font>
+                        <Font name="Forte" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+                </AnchorPane>
+            </items>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </SplitPane>
+    </children>
+</AnchorPane>
